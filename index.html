@@ -55,6 +55,25 @@
     nemo aliquid pariatur quam voluptates animi laudantium, aperiam
     consectetur nobis enim.
   </p>
+  <dl x-data="{menuIsOpen: false}">
+    <dt>
+      <button @click="menuIsOpen =! menuIsOpen">Lorem.</button>
+    </dt>
+    <dd x-show="menuIsOpen">Lorem ipsum dolor sit amet.</dd>
+  </dl>
+  <dl x-data="{menuIsOpen: false}">
+    <dt>
+      <button @click="menuIsOpen =! menuIsOpen">Id.</button>
+    </dt>
+    <dd x-show="menuIsOpen">Facere consequatur quidem incidunt iusto!</dd>
+  </dl>
+  <dl x-data="{menuIsOpen: false}">
+    <dt>
+      <button @click="menuIsOpen =! menuIsOpen">Cumque.</button>
+    </dt>
+    <dd x-show="menuIsOpen">Eius similique dolore aliquid officiis!</dd>
+  </dl>
+
 </body>
 
 </html>
