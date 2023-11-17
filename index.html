@@ -41,21 +41,21 @@
     <h1>TP image</h1>
     <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
       <ul>
-        <li><a href="chat.html">Image de Chat</a></li>
-        <li><a href="wombat.html">Image de Wombat</a></li>
+        <li><a href="Chats/chat.html">Image de Chat</a></li>
+        <li><a href="Wombat/wombat.html">Image de Wombat</a></li>
       </ul>
     </nav>
   </header>
   <div x-data="{ openElement: '' }">
     <dl>
       <dt><button @click="openElement = 'element1'"> Wombat</button></dt>
-      <dd x-show="openElement === 'element1'"><li><a href="wombat 1.html">Voir Wombat n°1</a></li></dd>
-      <dd x-show="openElement === 'element1'"><li><a href="wombat 2.html">Voir Wombat n°2</a></li></dd>
+      <dd x-show="openElement === 'element1'"><li><a href="Wombat/Wombat 1.html">Voir Wombat n°1</a></li></dd>
+      <dd x-show="openElement === 'element1'"><li><a href="Wombat/wombat 2.html">Voir Wombat n°2</a></li></dd>
     </dl>
     <dl>
       <dt><button @click="openElement = 'element2'">Chat</button></dt>
-      <dd x-show="openElement === 'element2'"><li><a href="chat 1.html">Voir Chat n°1</a></li></dd>
-      <dd x-show="openElement === 'element2'"><li><a href="chat 2.html">Voir Chat n°2</a></li></dd>
+      <dd x-show="openElement === 'element2'"><li><a href="Chats/chat 1.html">Voir Chat n°1</a></li></dd>
+      <dd x-show="openElement === 'element2'"><li><a href="Chats/chat 2.html">Voir Chat n°2</a></li></dd>
     </dl>
     <dl>
       <dt><button @click="openElement = 'element3'">Public</button></dt>
