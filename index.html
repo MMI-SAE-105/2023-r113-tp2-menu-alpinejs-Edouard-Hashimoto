@@ -46,6 +46,20 @@
       </ul>
     </nav>
   </header>
+  <div x-data="{ openElement: '' }">
+    <dl>
+      <dt><button @click="openElement = 'element1'"> Wombat</button></dt>
+      <dd x-show="openElement === 'element1'"></dd>
+    </dl>
+    <dl>
+      <dt><button @click="openElement = 'element2'">Chat</button></dt>
+      <dd x-show="openElement === 'element2'"> différentes races</dd>
+    </dl>
+    <dl>
+      <dt><button @click="openElement = 'element3'">Public</button></dt>
+      <dd x-show="openElement === 'element3'">Pour tout le monde </dd>
+    </dl>
+  </div>
 </body>
 
 </html>
