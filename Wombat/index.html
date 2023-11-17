@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tp Image</title>
+    <title>Accueil wombat</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
         .menu {
@@ -36,17 +36,18 @@
     <!-- header>h1{Test de menu} -->
     <header>
         <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header_menuBtn">
-            Menu
+            <img src="../src/menu.svg" alt="">
         </button>
         <h1>Wombat</h1>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
                 <li><a href="../index.html">Retourner à l'accueil</a></li>
+                <li><a href="../Chats/index.html">Image de Chat</a></li>
             </ul>
         </nav>
     </header>
-    <li><a href="Wombat 1.html">Wombat 1</a></li>
-    <li><a href="wombat 2.html">Wombat 2</a></li>
+    <li><a href="Wombat 1.html"><img src="../src/fleche.svg" alt="">Wombat 1</a></li>
+    <li><a href="wombat 2.html"><img src="../src/fleche.svg" alt="">Wombat 2</a></li>
 </body>
 
 </html>
