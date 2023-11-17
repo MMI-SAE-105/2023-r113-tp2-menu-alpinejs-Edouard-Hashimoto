@@ -49,15 +49,16 @@
   <div x-data="{ openElement: '' }">
     <dl>
       <dt><button @click="openElement = 'element1'"> Wombat</button></dt>
-      <dd x-show="openElement === 'element1'"></dd>
+      <dd x-show="openElement === 'element1'"><li><a href="wombat 1.html">Voir Wombat n°1</a></li></dd>
+      <dd x-show="openElement === 'element1'"><li><a href="wombat 2.html">Voir Wombat n°2</a></li></dd>
     </dl>
     <dl>
       <dt><button @click="openElement = 'element2'">Chat</button></dt>
-      <dd x-show="openElement === 'element2'"> différentes races</dd>
+      <dd x-show="openElement === 'element2'"></dd>
     </dl>
     <dl>
       <dt><button @click="openElement = 'element3'">Public</button></dt>
-      <dd x-show="openElement === 'element3'">Pour tout le monde </dd>
+      <dd x-show="openElement === 'element3'"></dd>
     </dl>
   </div>
 </body>
