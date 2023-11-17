@@ -36,7 +36,7 @@
   <!-- header>h1{Test de menu} -->
   <header>
     <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header_menuBtn">
-      <img src="src/menu.svg" alt="">
+      <img src="../Public/img/icones/menu.svg" alt="">
     </button>
     <h1>TP image</h1>
     <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
@@ -56,9 +56,6 @@
       <dt><button @click="openElement = 'element2'">Chat</button></dt>
       <dd x-show="openElement === 'element2'"><li><a href="Chats/chat 1.html">Voir Chat n°1</a></li></dd>
       <dd x-show="openElement === 'element2'"><li><a href="Chats/chat 2.html">Voir Chat n°2</a></li></dd>
-    </dl>
-    <dl>
-      <dt><button @click="openElement = 'element3'">Public</button></dt>
     </dl>
   </div>
 </body>
