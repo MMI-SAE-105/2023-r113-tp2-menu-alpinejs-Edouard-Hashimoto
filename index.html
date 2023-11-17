@@ -7,28 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tp Image</title>
   <script defer src="https://unpkg.com/alpinejs"></script>
-  <style>
-    .menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #fff;
-      display: grid;
-      place-content: center;
-    }
-
-    .header_menuBtn {
-      position: relative;
-      z-index: 10;
-    }
-
-    .noscroll,
-    .noscroll body {
-      overflow: hidden;
-    }
-  </style>
+  <link rel="stylesheet" href="/src/style.css">
 </head>
 
 <body>
@@ -38,7 +17,7 @@
     <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header_menuBtn">
       <img src="Public/img/icones/menu.svg" alt="">
     </button>
-    <h1>Image de chat</h1>
+    <h1>TP Image</h1>
     <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
       <ul>
         <li><a href="Chats/index.html">Image de Chat</a></li>

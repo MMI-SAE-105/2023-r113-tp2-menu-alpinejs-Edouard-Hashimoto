@@ -7,28 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil wombat</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <style>
-        .menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: #fff;
-            display: grid;
-            place-content: center;
-        }
-
-        .header_menuBtn {
-            position: relative;
-            z-index: 10;
-        }
-
-        .noscroll,
-        .noscroll body {
-            overflow: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 
 <body>
@@ -39,6 +18,8 @@
             <img src="../Public/img/icones/menu.svg" alt="">
         </button>
         <h1>Wombat</h1>
+        <p>Les wombats forment une famille de mammifères marsupiaux fouisseurs.</p>
+        <p>Ils vivent dans les forêts montagneuses d'Australie, où ils creusent de vastes terriers.</p>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
                 <li><a href="../index.html">Retourner à l'accueil</a></li>
