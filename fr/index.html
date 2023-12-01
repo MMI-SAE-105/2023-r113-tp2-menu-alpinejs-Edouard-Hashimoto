@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tp Image</title>
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <!-- https://emmet.io/ -->
+  <!-- header>h1{Test de menu} -->
+  <header>
+    <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header_menuBtn">
+      <img src="icones/menu.svg" alt="">
+    </button>
+    <h1>TP Image</h1>
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+      <ul>
+        <li><a href="Chats/index.html">Image de Chat</a></li>
+        <li><a href="Wombat/index.html">Image de Wombat</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div x-data="{ openElement: '' }">
+    <dl>
+      <dt><button @click="openElement = 'element1'"> Wombat</button></dt>
+      <dd x-show="openElement === 'element1'">
+        <li><a href="Wombat/Wombat 1.html">Voir Wombat n°1</a></li>
+      </dd>
+      <dd x-show="openElement === 'element1'">
+        <li><a href="Wombat/wombat 2.html">Voir Wombat n°2</a></li>
+      </dd>
+    </dl>
+    <dl>
+      <dt><button @click="openElement = 'element2'">Chat</button></dt>
+      <dd x-show="openElement === 'element2'">
+        <li><a href="Chats/chat 1.html">Voir Chat n°1</a></li>
+      </dd>
+      <dd x-show="openElement === 'element2'">
+        <li><a href="Chats/chat 2.html">Voir Chat n°2</a></li>
+      </dd>
+    </dl>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil wombat</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <!-- https://emmet.io/ -->
+    <!-- header>h1{Test de menu} -->
+    <header>
+        <button aria-controls="mainNav" @click="menuIsOpen =! menuIsOpen" class="header_menuBtn">
+            <img src="../Public/img/icones/menu.svg" alt="">
+        </button>
+        <h1>Wombat</h1>
+        <p>Les wombats forment une famille de mammifères marsupiaux fouisseurs.</p>
+        <p>Ils vivent dans les forêts montagneuses d'Australie, où ils creusent de vastes terriers.</p>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a href="../index.html">Retourner à l'accueil</a></li>
+                <li><a href="../Chats/index.html">Image de Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <li><a href="Wombat 1.html"><img src="../Public/img/icones/fleche.svg" alt="">Wombat 1</a></li>
+    <li><a href="wombat 2.html"><img src="../Public/img/icones/fleche.svg" alt="">Wombat 2</a></li>
+</body>
+
+</html>
