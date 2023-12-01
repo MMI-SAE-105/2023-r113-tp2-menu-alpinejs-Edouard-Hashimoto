@@ -20,6 +20,8 @@
     <h1>TP Picture</h1>
     <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
       <ul>
+        <li><a href="../index.html">Acceuil général</a></li>
+        <li><a href="../fr/index.html">Homepage in French</a></li>
         <li><a href="Chats/index.html">Picture of Cat</a></li>
         <li><a href="Wombat/index.html">Picture of Wombat</a></li>
       </ul>
@@ -38,10 +40,10 @@
     <dl>
       <dt><button @click="openElement = 'element2'">Cat</button></dt>
       <dd x-show="openElement === 'element2'">
-        <li><a href="Chats/chat 1.html">See Chat n°1</a></li>
+        <li><a href="Chats/chat 1.html">See Cat n°1</a></li>
       </dd>
       <dd x-show="openElement === 'element2'">
-        <li><a href="Chats/chat 2.html">See Chat n°2</a></li>
+        <li><a href="Chats/chat 2.html">See Cat n°2</a></li>
       </dd>
     </dl>
   </div>
